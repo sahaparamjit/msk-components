@@ -5,10 +5,7 @@ const useStyles = (theme) => ({
     backgroundColor: 'white',
     padding: 20
   },
-  headlineText: {
-    margin: 0
-  },
-  experienceItem: {
+  openPara: {
     margin: 0
   }
 })
@@ -30,9 +27,9 @@ const Basic = (
     }}>
       {
         <div >
-            <h4 style={styles.experienceItem}>Dear {recruiterName.value ? recruiterName.value + `,` : `,`}</h4>
+            <h4 style={styles.openPara}>Dear {recruiterName.value ? recruiterName.value + ',' : ','}</h4>
             <br />
-            <p style={styles.experienceItem}>{openPara.value}</p>
+            <p style={styles.openPara}>{openPara.value}</p>
         </div>
       }
     </div>
